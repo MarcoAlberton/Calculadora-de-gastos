@@ -1,0 +1,119 @@
+/* Reset CSS */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Estilização do fundo da página */
+
+body{
+    color: #333;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 6%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+main h1{
+    color:black;
+    font: bold;
+    margin-bottom: 20px;
+}
+
+.container{
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.486);
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s ease;
+
+}
+
+.container:hover{
+    transform: scale(1.03);
+}
+
+
+label{
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 20px;
+    font-weight: bold;
+}
+
+input{
+    padding: 10px ;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.2s;
+    font-weight: bold;
+
+}
+
+input:focus{
+    border-color: #3F5EFB;
+}
+
+#Categoria{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid black;
+
+}
+
+#Categoria:focus{
+    border-color: #3F5EFB;
+}
+
+button{
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #fc466a6b;
+}
+
+p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+
+
+
+
+
+@media(max-width: 400px){
+    .container{
+        width: 90%;
+        padding: 20px;
+    }
+}
