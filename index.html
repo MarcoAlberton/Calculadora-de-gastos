@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> CONTROLE DE GASTOS </title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 
 <body>
-    <main class="container">
+   
+    <div class="container">
         <h1> CONTROLE DE GASTOS </h1>
+        
+        <label for="valorGasto">Valor do gasto:</label>
+        <input type="number" id="valorGasto" step="0.01">
 
-        <form>
-            <label for="valor do gasto"> Digite o valor do gasto </label>
-            <input type="number" id="valor do gasto">
+        <label for="categoria">Categoria:</label>
+        <select id="categoria">
+            <option value="Alimentacao">Alimentação</option>
+            <option value="Transporte">Transporte</option>
+            <option value="Lazer">Lazer</option>
+            <option value="Outros">Outros</option>
+        </select>
 
-            <select id="Categoria"> 
-                <option> ALIMENTAÇÃO: </option>
-                <option> TRANSPORTE: </option>
-                <option> LAZER:  </option>
-                <option> OUTROS: </option>             
-            </select>
-            <button type="button" onclick="adicionarGastos()"> ADICIONAR </button>
-        </form>
+        <button onclick="adicionarGastos()">Adicionar</button>
 
-        <p id="Alimentação"> Alimentação: R$ 0,00 </p>
-        <p id="Transporte"> Transporte: R$ 0,00 </p>
-        <p id="Lazer"> Lazer: R$ 0,00 </p>
-        <p id="Outros"> Outros: R$ 0,00 </p>
-        <p id="Total"> Total: R$ 0,00 </p>
+        <p id="Alimentacao">Alimentação: R$ 0,00</p>
+        <p id="Transporte">Transporte: R$ 0,00</p>
+        <p id="Lazer">Lazer: R$ 0,00</p>
+        <p id="Outros">Outros: R$ 0,00</p>
+        <p id="Total">Total: R$ 0,00</p>
+    </div>
 
-<script src="script.js"></script>
-
-    </main>      
+        
     
 </body>
 
